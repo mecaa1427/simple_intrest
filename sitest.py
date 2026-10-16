@@ -1,4 +1,4 @@
-from simple_interest import simple_interest
+from simple import simple_interest
 
 
 def test_normal():
@@ -11,3 +11,9 @@ def test_zero_rate():
 
 def test_zero_time():
     assert simple_interest(10000, 5, 0) == 0
+
+
+def test_decimal():
+    assert simple_interest(1000, 2.5, 2) == 50
+
+
